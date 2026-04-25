@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EtihadWE Demo Page</title>
+    <style>
+        :root {
+            --primary-blue: #003359;
+            --accent-teal: #009688;
+            --light-gray: #f4f7f9;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--text-dark);
+        }
+
+        /* Header Layout */
+        header {
+            background-color: #fff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-placeholder {
+            width: 180px;
+            height: 60px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #ccc;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,51,89,0.8), rgba(0,51,89,0.8)), 
+                        url('https://via.placeholder.com/1920x600'); /* Replace with water/energy background */
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; }
+
+        /* Quick Actions Grid */
+        .container {
+            max-width: 1200px;
+            margin: -50px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--primary-blue); margin-bottom: 15px; }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-teal);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">
+            ETIHADWE LOGO
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Consumer</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">E-Services</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Powering Your Future</h1>
+        <p>Providing sustainable water and electricity services to the Northern Emirates.</p>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <h3>Pay Your Bill</h3>
+            <p>View and pay your utility bills quickly and securely.</p>
+            <a href="#" class="btn">Pay Now</a>
+        </div>
+        <div class="card">
+            <h3>Service Activation</h3>
+            <p>Moving to a new home? Request a new connection here.</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+        <div class="card">
+            <h3>Green Initiatives</h3>
+            <p>Learn how we are preserving our environment for tomorrow.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Etihad Water and Electricity. All rights reserved.</p>
+    </footer>
+
+   <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Df600000Hawbg',
+				'EtihadWEWebchat',
+				'https://intellicloudsolutions.my.site.com/ESWEtihadWEWebchat1774256325041',
+				{
+					scrt2URL: 'https://intellicloudsolutions.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://intellicloudsolutions.my.site.com/ESWEtihadWEWebchat1774256325041/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+    </body>
+</html>
